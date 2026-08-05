@@ -11,7 +11,6 @@
 ### Témaötletek: (még választanunk kell)
 - Naptár alkalmazás
 - Online / Offline fájlkonvertáló eszköz
-- Videójáték
 - Social media (AI slop nélkül, erősen filterelt)
 - Időjárás alkalmazás
 - Jobb Trello alternatíva
