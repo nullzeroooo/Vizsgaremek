@@ -6,6 +6,7 @@
 
 ### Technológiák
   Még nem tudjuk :C
+  HTML CSS JS alapok
 
 ### A KKK elvárásainak kijegyzetelése
 A vizsgázóknak minimum **2, maximum 3 fős fejlesztői csapatot alkotva kell a vizsgát megelőzően egy komplex szoftveralkalmazást lefejleszteniük**, amely:
