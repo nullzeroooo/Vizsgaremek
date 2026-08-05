@@ -28,7 +28,7 @@ A vizsgafeladat során a vizsgázó gyakorlati bemutatóval összekapcsolt szób
 - a csapaton belüli munkamegosztást, a fejlesztési csapatban betöltött szerepét, a fejlesztés során használt projektszervezési eszközöket.
 
 A fentieken túl maximum **3-5 perces angol nyelven tartott szóbeli előadás** formájában összefoglalót ad a szoftver céljáról és működéséről, valamint **angolul válaszol** a vizsgáztató végfelhasználói szerepben feltett maximum 2-3 kérdésére. A vizsgaremek bemutatására és megvédésére maximum **30 perc** áll a vizsgázó rendelkezésére.
-### Témaötletek:
+### Témaötletek: (még választanunk kell)
 - Naptár alkalmazás
 - Online / Offline fájlkonvertáló eszköz
 - Videójáték
