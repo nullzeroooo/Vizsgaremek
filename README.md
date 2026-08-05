@@ -3,6 +3,10 @@
 - Ring Péter (Projektvezető)
 - Óbert György
 - Kószó Barnabás
+
+### Technológiák
+  Még nem tudjuk :C
+
 ### A KKK elvárásainak kijegyzetelése
 A vizsgázóknak minimum **2, maximum 3 fős fejlesztői csapatot alkotva kell a vizsgát megelőzően egy komplex szoftveralkalmazást lefejleszteniük**, amely:
 - Életszerű, **valódi problémára** nyújt megoldást.
