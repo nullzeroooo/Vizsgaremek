@@ -1,9 +1,9 @@
 # **Projektmunka specifikációk**
-#### Csapattagok és projektvezető
+### Csapattagok és projektvezető
 - Ring Péter (Projektvezető)
 - Óbert György
 - Kószó Barnabás
-#### A KKK elvárásainak kijegyzetelése
+### A KKK elvárásainak kijegyzetelése
 A vizsgázóknak minimum **2, maximum 3 fős fejlesztői csapatot alkotva kell a vizsgát megelőzően egy komplex szoftveralkalmazást lefejleszteniük**, amely:
 - Életszerű, **valódi problémára** nyújt megoldást.
 - **Adattárolási és -kezelési** funkciókat is megvalósít.
@@ -28,7 +28,7 @@ A vizsgafeladat során a vizsgázó gyakorlati bemutatóval összekapcsolt szób
 - a csapaton belüli munkamegosztást, a fejlesztési csapatban betöltött szerepét, a fejlesztés során használt projektszervezési eszközöket.
 
 A fentieken túl maximum **3-5 perces angol nyelven tartott szóbeli előadás** formájában összefoglalót ad a szoftver céljáról és működéséről, valamint **angolul válaszol** a vizsgáztató végfelhasználói szerepben feltett maximum 2-3 kérdésére. A vizsgaremek bemutatására és megvédésére maximum **30 perc** áll a vizsgázó rendelkezésére.
-#### Témaötletek:
+### Témaötletek:
 - Naptár alkalmazás
 - Online / Offline fájlkonvertáló eszköz
 - Videójáték
