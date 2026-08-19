@@ -1,18 +1,20 @@
 # **Projektmunka specifikációk**
 
-### Csapattagok és projektvezető
+### Team-members and PM:
 
 * Ring Péter (Projektvezető, frontend)
 * Óbert György (Backend)
 * Kószó Barnabás (Database)
 
-### Technológiák
+### Technologies:
 
 * HTML CSS JS/TS
 * Angular JS
 * REST API: Node JS + Express JS
 
-### Témaötletek: (még választanunk kell)
+**Yet to decide fully**
+
+### Topic:
 
 * Subscription based course taking app (like Coursera)
 
