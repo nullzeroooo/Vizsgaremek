@@ -3,6 +3,28 @@ nav {
   background-color: var(--navbar);
   justify-content: space-between;
   padding: 13px 100px;
+  gap: 50px;
+}
+
+.searchbar {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  background-color: white;
+  border-radius: 28px;
+  padding: 0px 0px 0px 14px;
+  gap: 14px;
+}
+
+.searchbar input {
+  font-size: 15px;
+  background-color: white;
+  outline: none;
+  border: none;
+  border-radius: 0px 28px 28px 0px;
+  padding: 12px 0px;
+  flex: 1;
+  width: auto;
 }
 
 .nav-links {
@@ -27,4 +49,15 @@ nav {
 
 .logo img {
   width: 160px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.buttons button {
+  width: 20px;
+  height: 20px;
 }
