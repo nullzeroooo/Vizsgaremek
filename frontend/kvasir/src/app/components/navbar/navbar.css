@@ -1,0 +1,30 @@
+nav {
+  display: flex;
+  background-color: var(--navbar);
+  justify-content: space-between;
+  padding: 13px 100px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-links a {
+  display: block;
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+  font-family: 'DM Sans';
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 160px;
+}
