@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: localhost:3306
--- Létrehozás ideje: 2026. Okt 20. 07:49
+-- Létrehozás ideje: 2026. Okt 21. 10:39
 -- Kiszolgáló verziója: 5.7.24
 -- PHP verzió: 8.3.1
 
@@ -75,17 +75,6 @@ CREATE TABLE `review` (
 -- --------------------------------------------------------
 
 --
--- Tábla szerkezet ehhez a táblához `role`
---
-
-CREATE TABLE `role` (
-  `id` int(11) NOT NULL,
-  `role_name` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
 -- Tábla szerkezet ehhez a táblához `subcription`
 --
 
@@ -144,11 +133,11 @@ CREATE TABLE `topic` (
 
 CREATE TABLE `user` (
   `id` int(11) NOT NULL,
-  `role_id` int(11) NOT NULL,
   `subcription_id` int(11) NOT NULL,
   `fullname` varchar(50) NOT NULL,
   `email` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
+  `role` enum('User','Teacher','Admin') NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `deleted_at` timestamp NULL DEFAULT NULL,
@@ -183,12 +172,6 @@ ALTER TABLE `review`
   ADD KEY `fk_user_review` (`user_id`);
 
 --
--- A tábla indexei `role`
---
-ALTER TABLE `role`
-  ADD PRIMARY KEY (`id`);
-
---
 -- A tábla indexei `subcription`
 --
 ALTER TABLE `subcription`
@@ -220,7 +203,6 @@ ALTER TABLE `topic`
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `email` (`email`),
-  ADD KEY `fk_role` (`role_id`),
   ADD KEY `fk_subcription` (`subcription_id`);
 
 --
@@ -243,12 +225,6 @@ ALTER TABLE `course_content`
 -- AUTO_INCREMENT a táblához `review`
 --
 ALTER TABLE `review`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT a táblához `role`
---
-ALTER TABLE `role`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
@@ -311,7 +287,6 @@ ALTER TABLE `tag_x_course`
 -- Megkötések a táblához `user`
 --
 ALTER TABLE `user`
-  ADD CONSTRAINT `fk_role` FOREIGN KEY (`role_id`) REFERENCES `role` (`id`),
   ADD CONSTRAINT `fk_subcription` FOREIGN KEY (`subcription_id`) REFERENCES `subcription` (`id`);
 COMMIT;
 
