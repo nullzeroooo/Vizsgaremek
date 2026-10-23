@@ -1,0 +1,9 @@
+@if (leadingIcon(); as icon) {
+  <svg [lucideIcon]="icon" [size]="iconSize()" aria-hidden="true"></svg>
+}
+
+<span class="label"><ng-content /></span>
+
+@if (trailingIcon(); as icon) {
+  <svg [lucideIcon]="icon" [size]="iconSize()" aria-hidden="true"></svg>
+}

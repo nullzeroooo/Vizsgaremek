@@ -8,11 +8,10 @@
     <li><a href="#" class="nav-link">About</a></li>
   </ul>
   <div class="searchbar">
-    <svg lucideSearch size="20" color="red"></svg>
+    <svg lucideSearch class="search-icon"></svg>
     <input type="search" placeholder="Search for courses..." />
   </div>
-  <div class="buttons">
-    <button></button>
-    <button></button>
-  </div>
+  <button appButton disabled [variant]="'primary-light'" [size]="'lg'" [iconLeft]="Search">
+    hey
+  </button>
 </nav>

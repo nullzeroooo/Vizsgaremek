@@ -1,9 +1,24 @@
+:host {
+  --light-navbar-bg: #d6ecfe;
+  --navbar-background: var(--accent-100);
+  --navbar-text: var(--light-general-text);
+}
+
 nav {
   display: flex;
-  background-color: var(--navbar);
   justify-content: space-between;
   padding: 13px 100px;
   gap: 50px;
+  background-color: var(--light-navbar-bg);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 160px;
 }
 
 .searchbar {
@@ -27,6 +42,10 @@ nav {
   width: auto;
 }
 
+.search-icon {
+  color: var(--grey-300);
+}
+
 .nav-links {
   display: flex;
   list-style: none;
@@ -38,17 +57,7 @@ nav {
   display: block;
   font-size: 15px;
   text-decoration: none;
-  color: black;
   font-family: 'DM Sans';
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  width: 160px;
 }
 
 .buttons {

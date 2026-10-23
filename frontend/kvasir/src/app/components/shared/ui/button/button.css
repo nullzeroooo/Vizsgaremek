@@ -1,0 +1,115 @@
+/* Base: every button reads from local variables */
+:host {
+  /* defaults (overridden by variant/size blocks below) */
+  --btn-bg: var(--primary-300);
+  --btn-bg-hover: var(--primary-400);
+  --btn-fg: var(--primary-700);
+  --btn-ring: var(--primary-100);
+  --btn-height: 40px;
+  --btn-pad-x: 16px;
+  --btn-font-size: 14px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: var(--btn-height);
+  padding-inline: var(--btn-pad-x);
+  border: 0;
+  border-radius: 8px;
+  background: var(--btn-bg);
+  color: var(--btn-fg);
+  font: 500 var(--btn-font-size) / 1 inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 150ms ease;
+}
+
+/* ---------- States ---------- */
+:host(:hover:not(:disabled)) {
+  background: var(--btn-bg-hover);
+}
+
+:host(:focus-visible) {
+  outline: 2px solid var(--btn-ring);
+  outline-offset: 2px;
+}
+
+:host(:disabled),
+:host([aria-disabled='true']) {
+  background: var(--grey-300);
+  color: var(--grey-500);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* ---------- Sizes ---------- */
+:host([data-size='sm']) {
+  --btn-height: 32px;
+  --btn-pad-x: 12px;
+  --btn-font-size: 12px;
+}
+:host([data-size='md']) {
+  --btn-height: 40px;
+  --btn-pad-x: 16px;
+  --btn-font-size: 14px;
+}
+:host([data-size='lg']) {
+  --btn-height: 48px;
+  --btn-pad-x: 20px;
+  --btn-font-size: 16px;
+}
+
+/* ---------- Icon-only: square ---------- */
+:host(.icon-only) {
+  width: var(--btn-height);
+  padding: 0;
+}
+
+/* Keep the label for screen readers, hide it visually */
+:host(.icon-only) .label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* ---------- Variants (adjust the values to match Figma) ---------- */
+:host([data-variant='primary-dark']) {
+  --btn-bg: var(--primary-300);
+  --btn-bg-hover: var(--primary-200);
+  --btn-fg: var(--primary-700);
+  --btn-ring: var(--primary-100);
+}
+:host([data-variant='primary-light']) {
+  --btn-bg: var(--primary-300);
+  --btn-bg-hover: var(--primary-400);
+  --btn-fg: var(--primary-0);
+  --btn-ring: var(--primary-600);
+}
+:host([data-variant='primary-inverted']) {
+  --btn-bg: var(--white);
+  --btn-bg-hover: var(--primary-90);
+  --btn-fg: var(--primary-400);
+  --btn-ring: var(--primary-200);
+}
+:host([data-variant='accent-light']) {
+  --btn-bg: var(--accent-300);
+  --btn-bg-hover: var(--accent-400);
+  --btn-fg: var(--accent-700);
+  --btn-ring: var(--accent-600);
+}
+:host([data-variant='accent-dark']) {
+  --btn-bg: var(--accent-300);
+  --btn-bg-hover: var(--accent-400);
+  --btn-fg: var(--accent-700);
+  --btn-ring: var(--white);
+}
+:host([data-variant='accent-inverted']) {
+  --btn-bg: var(--white);
+  --btn-bg-hover: var(--accent-90);
+  --btn-fg: var(--accent-300);
+  --btn-ring: var(--accent-200);
+}
